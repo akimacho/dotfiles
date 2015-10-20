@@ -9,16 +9,16 @@ source ~/perl5/perlbrew/etc/bashrc
 
 ### alias
 case "${OSTYPE}" in
-darwin*)
-  alias ls="ls -G"
-  alias ll="ls -lG"
-  alias la="ls -laG"
-  ;;
+freebsd*|darwin*)
+    alias ls="ls -G -w"
+    alias ll="ls -G -wl"
+    alias la="ls -G -wal"
+    ;;
 linux*)
-  alias ls='ls --color'
-  alias ll='ls -l --color'
-  alias la='ls -la --color'
-  ;;
+    alias ls="ls --color"
+    alias ll="ls --color -wl"
+    alias la="ls --color -wal"
+    ;;
 esac
 
 # for Mac OSX
