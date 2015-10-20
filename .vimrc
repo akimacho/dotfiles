@@ -1,4 +1,5 @@
-" **** syntax 
+" **** syntax
+filetype plugin indent on
 syntax enable
 syntax on
 
@@ -19,7 +20,7 @@ set fileencoding=utf-8
 set nowritebackup
 set nobackup
 
-" *** search 
+" *** search
 set incsearch
 set hlsearch
 set wrap
@@ -31,3 +32,8 @@ set expandtab
 set shiftwidth=4
 set smartindent
 
+"map <C-g> :Gtags 
+"map <C-h> :Gtags -f %<CR>
+"map <C-j> :GtagsCursor<CR>
+"map <C-n> :cn<CR>
+"map <C-p> :cp<CR>
