@@ -8,10 +8,18 @@ export PATH="/usr/local/bin:$PATH"
 source ~/perl5/perlbrew/etc/bashrc
 
 ### alias
-alias ls="ls -G"
-alias ll="ls -Gl"
-alias la="ls -Gal"
-alias rm="rm -i"
+case "${OSTYPE}" in
+darwin*)
+  alias ls="ls -G"
+  alias ll="ls -lG"
+  alias la="ls -laG"
+  ;;
+linux*)
+  alias ls='ls --color'
+  alias ll='ls -l --color'
+  alias la='ls -la --color'
+  ;;
+esac
 
 # for Mac OSX
 alias cot="open -a coteditor"
