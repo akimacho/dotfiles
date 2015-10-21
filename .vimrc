@@ -32,8 +32,10 @@ set expandtab
 set shiftwidth=4
 set smartindent
 
-"map <C-g> :Gtags 
-"map <C-h> :Gtags -f %<CR>
-"map <C-j> :GtagsCursor<CR>
-"map <C-n> :cn<CR>
-"map <C-p> :cp<CR>
+" *** gtags
+" https://www.gnu.org/software/global/
+map <C-g> :Gtags 
+map <C-h> :Gtags -f %<CR>
+map <C-j> :GtagsCursor<CR>
+map <C-n> :cn<CR>
+map <C-p> :cp<CR>
