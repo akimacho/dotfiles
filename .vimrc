@@ -25,6 +25,9 @@ set incsearch
 set hlsearch
 set wrap
 
+" *** key
+set backspace=indent,eol,start
+
 " *** indent
 set tabstop=4
 set autoindent

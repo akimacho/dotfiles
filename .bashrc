@@ -5,6 +5,7 @@ fi
 
 ### path
 export PATH="/usr/local/bin:$PATH"
+# perlbrew
 source ~/perl5/perlbrew/etc/bashrc
 
 ### alias
